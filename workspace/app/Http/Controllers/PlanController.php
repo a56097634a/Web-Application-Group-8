@@ -118,7 +118,7 @@ class PlanController extends Controller
         
         $plan->save();
         $trainee->save();
-        return Redirect::to('/trainer/profile');
+        return Redirect::to('/trainer/traineeList');
     }
 
 }

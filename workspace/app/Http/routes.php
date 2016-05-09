@@ -12,7 +12,9 @@
 */
 
 Route::get('/', 'HomeController@home');
-Route::get('/about', 'HomeController@about');
+Route::get('/about', function (){
+    return view('about');
+});
 Route::auth();
 
 Route::get('/trainer/profile', 'TrainerController@showProfile');

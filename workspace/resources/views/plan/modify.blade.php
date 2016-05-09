@@ -84,6 +84,20 @@
         <label for="field-2" class="fieldinsideform" name="trainer1" value="{{$trainer->trainerId}}">{{$user->firstName}} {{$user->lastName}}</label>
         <label for="field-2" class="field-label">Trianee</label>
         <label for="field-2" class="fieldinsideform" name="trainee1" value="{{$trainee->traineeId}}">{{$user1->firstName}} {{$user1->lastName}}</label>
+        <label for="workoutProgram" class="field-label">Workout Program</label>
+        <select id="workoutProgram" name="WPId" class="w-select select-field" required="required"  @if($workoutProgram) value="{{$workoutProgram->WPId}}" @endif>
+          @foreach($options['workoutPrograms'] as $WP)
+          <option value="{{$WP->WPId}}" @if($workoutProgram && $workoutProgram->WPId == $WP->WPId) selected @endif>{{$WP->WPName}}</option>
+          @endforeach
+        </select>
+        <a href="#" data-ix="new-interaction" class="text-link">Add Workout program</a>
+        <label for="dietProgram" class="field-label">Diet Program</label>
+        <select id="dietProgram" name="DPId" data-name="dietProgram" class="w-select select-field" required="required">
+          @foreach($options['dietPrograms'] as $DP)
+          <option value="{{$DP->DPId}}"  @if($dietProgram && $dietProgram->DPId == $DP->DPId) selected @endif>{{$DP->DPName}}</option>
+          @endforeach
+        </select>
+        <a href="#" data-ix="adddietinteraction" class="text-link">Add Diet Program</a>
         <label for="planName" class="field-label">Plan name</label>
         <input id="planName" type="text" placeholder="Enter your plan" name="planName" data-name="planName" required="required" value="{{$plan->planName}}" class="w-input text-field">
         <label for="PlanImpact" class="field-label">Plan Impact</label>
@@ -100,20 +114,6 @@
         <input id="GoalDescription" type="text" placeholder="Enter goal description" name="goalDescription" data-name="goalDescription" @if($goal) value="{{$goal->goalDescritption}}" @endif required="required" class="w-input text-field">
         <label for="GoalLength" class="field-label">Goal Length</label>
         <input id="GoalLength" type="text" placeholder="Enter goal length" name="goalLength" data-name="goalLength" required="required" @if($goal) value="{{$goal->goalLength}}" @endif class="w-input text-field">
-        <label for="workoutProgram" class="field-label">Workout Program</label>
-        <select id="workoutProgram" name="WPId" class="w-select select-field" required="required"  @if($workoutProgram) value="{{$workoutProgram->WPId}}" @endif>
-          @foreach($options['workoutPrograms'] as $WP)
-          <option value="{{$WP->WPId}}" @if($workoutProgram && $workoutProgram->WPId == $WP->WPId) selected @endif>{{$WP->WPName}}</option>
-          @endforeach
-        </select>
-        <a href="#" data-ix="new-interaction" class="text-link">Add Workout program</a>
-        <label for="dietProgram" class="field-label">Diet Program</label>
-        <select id="dietProgram" name="DPId" data-name="dietProgram" class="w-select select-field" required="required">
-          @foreach($options['dietPrograms'] as $DP)
-          <option value="{{$DP->DPId}}"  @if($dietProgram && $dietProgram->DPId == $DP->DPId) selected @endif>{{$DP->DPName}}</option>
-          @endforeach
-        </select>
-        <a href="#" data-ix="adddietinteraction" class="text-link">Add Diet Program</a>
         <input type="submit" value="Submit" data-wait="Please wait..." class="w-button link">
       </form>
       <div class="w-form-done">
