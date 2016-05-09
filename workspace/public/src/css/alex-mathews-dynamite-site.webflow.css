@@ -1,0 +1,467 @@
+body {
+  background-image: url('../images/background.gif');
+  background-position: 0px 0px;
+  background-size: cover;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+h1 {
+  margin-top: 29px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  font-family: Montserrat, sans-serif;
+  color: rgba(238, 90, 21, .56);
+  font-size: 55px;
+  line-height: 44px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 19px;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: hsla(0, 0%, 100%, .12);
+  font-family: Montserrat, sans-serif;
+  color: rgba(226, 123, 29, .77);
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 400;
+  letter-spacing: 8.1px;
+}
+
+a {
+  text-decoration: underline;
+}
+
+.navbar {
+  margin-bottom: 1px;
+  border-color: transparent;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  background-color: transparent;
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.navbarcontainer {
+  bottom: -1px;
+  border-bottom: 3px solid #910f0f;
+  background-color: transparent;
+}
+
+.nav-link {
+  margin-top: 19px;
+  margin-right: 2px;
+  margin-left: 2px;
+  border: 1px solid #978c8c;
+  border-radius: 64px;
+  font-family: Lato, sans-serif;
+  color: #fff;
+}
+
+.container {
+  display: block;
+  margin: 50px auto;
+  padding-bottom: 10px;
+  background-color: hsla(0, 0%, 100%, .11);
+  color: #000;
+}
+
+.submit-button {
+  display: block;
+  width: 199px;
+  margin-top: 12px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 17px;
+  background-color: rgba(197, 80, 25, .55);
+}
+
+.field-label {
+  margin-top: 42px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: transparent;
+  font-family: Montserrat, sans-serif;
+  color: rgba(214, 109, 26, .82);
+  font-size: 21px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 3.1px;
+}
+
+.text-field {
+  width: 608px;
+  margin-right: auto;
+  margin-bottom: 18px;
+  margin-left: auto;
+  border-color: #c2502c;
+  border-radius: 9px;
+  background-color: rgba(83, 81, 81, .46);
+  color: hsla(0, 26%, 84%, .88);
+}
+
+.text-field.block {
+  height: 183px;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+}
+
+.unordered-list {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.tabs {
+  text-align: center;
+}
+
+.tab-link {
+  height: auto;
+  margin-top: 10px;
+  margin-left: 7px;
+  border-radius: 57px;
+  background-color: hsla(0, 0%, 87%, .48);
+  font-family: Montserrat, sans-serif;
+  color: #000;
+  letter-spacing: 3px;
+}
+
+.tab-link.w--current {
+  border-radius: 57px;
+  background-color: hsla(0, 0%, 100%, .82);
+  font-family: Montserrat, sans-serif;
+  color: #b8520d;
+}
+
+.text-block {
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-family: Montserrat, sans-serif;
+  color: #e76c1a;
+  font-size: 17px;
+  text-align: center;
+}
+
+.text-block.textinsidelist {
+  color: #dacfc8;
+}
+
+.tab-pane {
+  height: 221px;
+  font-size: 18px;
+}
+
+.row {
+  display: block;
+  width: auto;
+  height: auto;
+  margin-top: 21px;
+  padding-right: 0px;
+  background-color: transparent;
+  font-size: 13px;
+}
+
+.image {
+  margin-top: 11px;
+  margin-bottom: 11px;
+  padding-top: 0px;
+  background-color: transparent;
+  opacity: 0.54;
+}
+
+.footercontainer {
+  position: relative;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  border-top: 12px solid #db791f;
+}
+
+.link {
+  position: static;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: block;
+  width: 334px;
+  height: 48px;
+  margin: 42px auto;
+  border: 4px solid #e46e20;
+  border-radius: 27px;
+  background-color: rgba(57, 109, 151, .34);
+  font-family: Montserrat, sans-serif;
+  color: rgba(214, 91, 33, .85);
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 2.1px;
+}
+
+.link:hover {
+  background-color: rgba(230, 236, 241, .2);
+}
+
+.text-link {
+  position: static;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: block;
+  width: 403px;
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
+  font-family: Montserrat, sans-serif;
+  color: #aa6628;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.forgot-password {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.checkbox-field {
+  display: block;
+  width: 188px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Montserrat, sans-serif;
+  color: rgba(214, 109, 26, .82);
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.row1dashboard {
+  display: block;
+  width: 882px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: auto;
+  padding-left: auto;
+  text-align: center;
+}
+
+.column1dashboard {
+  height: 218px;
+  padding-right: 12px;
+  background-color: transparent;
+}
+
+.column2dashboard {
+  height: 194px;
+}
+
+.column3dashb {
+  height: 270px;
+  margin-top: 30px;
+}
+
+.column4dashb {
+  height: 300px;
+}
+
+.link1dash {
+  display: block;
+  height: 218px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: hsla(35, 24%, 81%, .74);
+}
+
+.link2dash {
+  display: block;
+  height: 192px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 16px;
+  background-color: rgba(236, 193, 56, .7);
+  font-family: Montserrat, sans-serif;
+}
+
+.link3dash {
+  display: block;
+  height: 270px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgba(143, 64, 64, .78);
+}
+
+.link4dash {
+  display: block;
+  height: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgba(56, 152, 236, .74);
+}
+
+.list-item {
+  display: block;
+  width: 855px;
+  margin-top: 15px;
+  background-color: hsla(0, 0%, 100%, .09);
+}
+
+.button_dashboard {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 18px;
+  background-color: rgba(28, 190, 197, .4);
+  font-family: Montserrat, sans-serif;
+  letter-spacing: 3px;
+}
+
+.form {
+  width: auto;
+  margin-top: 30px;
+  padding-top: 0px;
+  background-color: rgba(3, 54, 11, .14);
+}
+
+.imageprofile {
+  display: block;
+  width: 267px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 4px solid #e09816;
+  border-radius: 67px;
+  background-color: transparent;
+  opacity: 0.79;
+}
+
+.select-field {
+  display: block;
+  width: 411px;
+  margin-right: auto;
+  margin-left: auto;
+  border-color: #f77d1e;
+  border-radius: 11px;
+  background-color: #000;
+  opacity: 0.24;
+  font-family: Montserrat, sans-serif;
+  color: #8a0909;
+  letter-spacing: 2px;
+}
+
+.fieldinsideform {
+  margin-top: 10px;
+  font-family: Montserrat, sans-serif;
+  color: hsla(0, 36%, 96%, .54);
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.modal-wrapper {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 9999;
+  overflow: auto;
+  height: 100%;
+  padding-top: 89px;
+  border: 2px solid transparent;
+  background-color: rgba(0, 0, 0, .57);
+  opacity: 1;
+  text-align: center;
+}
+
+.workoutprogramwrapper {
+  display: block;
+  overflow: visible;
+  width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 29px;
+  border: 2px solid #fff;
+  border-radius: 34px;
+  background-color: rgba(49, 48, 48, .81);
+}
+
+.link-close {
+  border: 2px solid #000;
+  font-family: Montserrat, sans-serif;
+  color: #aa6424;
+  text-decoration: none;
+}
+
+.modal-wrapper-diet {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 9999;
+  display: block;
+  overflow: scroll;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 90px;
+  background-color: rgba(0, 0, 0, .66);
+  text-align: center;
+}
+
+.containerscroll {
+  overflow: auto;
+  height: 100px;
+  margin-bottom: 42px;
+  border: 2px solid #000;
+  background-color: rgba(0, 0, 0, .28);
+}
+
+.text-logo {
+  display: block;
+  width: 595px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: 20px;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  color: #fff;
+  font-size: 48px;
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 7px;
+}
+
+.footertwxt {
+  margin-top: -1px;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  text-align: left;
+}
+
+.footertwxt.right {
+  text-align: right;
+}
+
+.about-image {
+  opacity: 0.66;
+}
+
+html.w-mod-js *[data-ix="workoutinteraction"] {
+  display: none;
+  opacity: 0;
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+}
